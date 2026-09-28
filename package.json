@@ -1,0 +1,28 @@
+{
+  "name": "my-game-menu",
+  "version": "1.0.0",
+  "description": "My Game Menu",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "electron": "^44.4.5",
+    "electron-builder": "^26.0.12"
+  },
+  "build": {
+    "appId": "com.mygamemenu.app",
+    "productName": "My Game Menu",
+    "win": {
+      "target": "nsis"
+    }
+  },
+  "allowScripts": {
+    "electron@44.4.5": true
+  }
+}

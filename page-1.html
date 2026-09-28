@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>خطة البحث</title>
+  <link rel="preload" href="assets/research-transition.gif" as="image" type="image/gif">
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body data-page="page-1.html">
+  <div class="research-opening" aria-hidden="true">
+    <span class="research-opening__white"></span>
+    <img class="research-opening__gif" src="assets/research-transition.gif" alt="">
+  </div>
+  <main class="research-page">
+    <button class="research-page__button" type="button" aria-label="خطة البحث">
+      <span class="research-page__artwork">
+        <img src="assets/research-plan.png" alt="خطة البحث">
+      </span>
+    </button>
+    <p class="research-page__prompt">إضغط ENTER</p>
+  </main>
+  <div class="research-close-transition">
+    <span class="research-close-transition__black"></span>
+    <section class="research-menu" aria-label="أقسام خطة البحث">
+      <h1>خطة البحث</h1>
+      <nav>
+        <a href="#introduction"><span>المقدمة</span></a>
+        <a href="#chapter-1"><span>المبحث الأول</span></a>
+        <a href="#chapter-2"><span>المبحث الثاني</span></a>
+        <a href="#chapter-3"><span>المبحث الثالث</span></a>
+        <a href="#conclusion"><span>الخاتمة</span></a>
+      </nav>
+    </section>
+    <p class="research-return-hint">إضغط على <span aria-hidden="true">➜</span></p>
+  </div>
+  <div class="research-return-transition" aria-hidden="true"></div>
+  <div class="background-scene" aria-hidden="true">
+    <video class="background-video" autoplay muted loop playsinline preload="auto">
+      <source src="assets/background.mp4" type="video/mp4">
+    </video>
+    <div class="title-canvas" aria-hidden="true"></div>
+  </div>
+  <main class="menu-screen">
+    <nav class="menu-items" aria-label="القائمة الرئيسية"></nav>
+    <p class="video-error" role="status" hidden>تعذّر تشغيل فيديو الخلفية. تأكد من وجوده داخل مجلد assets.</p>
+  </main>
+</body>
+</html>
